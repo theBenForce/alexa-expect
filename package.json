@@ -1,0 +1,26 @@
+{
+  "name": "alexa-expect",
+  "version": "1.0.0",
+  "description": "Some jest expect extensions for testing Alexa skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theBenForce/alexa-expect.git"
+  },
+  "keywords": [
+    "jest",
+    "alexa"
+  ],
+  "author": "Ben Force",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theBenForce/alexa-expect/issues"
+  },
+  "homepage": "https://github.com/theBenForce/alexa-expect#readme",
+  "devDependencies": {
+    "jest": "^23.4.2"
+  }
+}
