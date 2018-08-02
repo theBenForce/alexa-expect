@@ -1,6 +1,6 @@
 const spokenExtension = {
   toHaveSaid(received, argument) {
-    var content = received.response;
+    var content = received.response.content;
 
     if (content) {
       content = content.outputSpeech;
@@ -11,7 +11,7 @@ const spokenExtension = {
         content.type.toUpperCase() === "SSML" ? content.ssml : content.text;
     }
 
-    pass = content.indexOf(argument) >= 0;
+    pass = content && content.indexOf(argument) >= 0;
 
     if (pass) {
       return {
