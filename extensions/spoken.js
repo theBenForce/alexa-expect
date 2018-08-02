@@ -1,6 +1,6 @@
 const spokenExtension = {
   toHaveSaid(received, argument) {
-    var content = received.response.content;
+    var content = received.response;
 
     if (content) {
       content = content.outputSpeech;

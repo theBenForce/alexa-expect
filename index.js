@@ -1,2 +1,5 @@
+var result = {};
 
-expect.extend(require('./extensions/spoken'));
+result = Object.assign(result, require("./extensions/spoken"));
+
+module.exports = require;

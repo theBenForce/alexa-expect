@@ -8,21 +8,17 @@ beforeEach(() => {
   received = {
     ssml: {
       response: {
-        content: {
-          outputSpeech: {
-            type: "SSML",
-            ssml: `<speak>${testValue}</speak>`
-          }
+        outputSpeech: {
+          type: "SSML",
+          ssml: `<speak>${testValue}</speak>`
         }
       }
     },
     text: {
       response: {
-        content: {
-          outputSpeech: {
-            type: "plainText",
-            text: testValue
-          }
+        outputSpeech: {
+          type: "plainText",
+          text: testValue
         }
       }
     }
@@ -43,7 +39,7 @@ describe("spoken expects", () => {
   });
 
   test("toHaveSaid should fail when ssml string is not present", () => {
-    received.ssml.response.content.outputSpeech.ssml =
+    received.ssml.response.outputSpeech.ssml =
       "<speak>Something different</speak>";
     var result = spoken.toHaveSaid(received.ssml, testValue);
 
